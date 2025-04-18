@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Delius&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+   
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+button{
+  cursor: pointer !important;
+}
+
+/* Header and the intro section start */
+/* Header */
+.large-header {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+    
+}
+
+/* Full-screen background animation */
+#demo-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; 
+    pointer-events: none;
+}
+
+.Feedback{
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 3rem
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    background-color: #F1EFEC;
+    color: hwb(0 0% 100%);
+    max-height: 80px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header__menu>li{
+    display: inline-block;
+    flex-wrap: nowrap;
+    padding: 20px;
+    font-size: 17px;
+    color: hsl(0, 0%, 1%);
+    font-weight: 600;
+}
+.header__title{
+ padding: 20px;
+}
+.header__title > a{
+    color: #212e39;
+    text-decoration: underline;
+}
+
+/* After header */
+
+.frontpage_lines{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: "Delius";
+    padding-top:  5rem;
+
+}
+.lines__pj{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 17px;
+    color: #0A1931;
+}
+@media (max-width: 767px) {
+  
+    .frontpage_lines{
+        color: hwb(0 0% 100%);
+        font-size: 1.7rem;
+        font-weight: 500;
+        padding-top: 7rem;
+        margin: auto 7px ;
+    }
+    #demo-canvas{
+       margin-top: -100px;
+       
+    }
+    .handlebg{
+      display: none;
+    }
+    .lines__pj{
+        font-size: 15px;
+        background-color: #F1EFEC;
+    }
+   .header__menu>li>a{
+    font-size: 20px;
+   }
+   .header__title{
+    display: none;
+   }
+  
+}
+.btn__animation{
+    margin-top: 2.2rem;
+    padding: 0.6rem 2rem;
+    border-radius: 15px;
+    background-color: #000;
+    color: aliceblue;
+    margin-bottom: 0;
+}
+/* Header and the intro section end */
+
+/* Cards */
+
+/* Flex container for the project cards */
+.project_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* Add space between the cards */
+  padding: 2rem;
+}
+
+/* Styling for individual project cards */
+.project_card {
+  position: relative;
+  width: 300px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: linear-gradient(145deg, #1c1c1c, #2a2a2a);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  color: #f1f1f1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.project_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.project_card .topper {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: hsl(283, 29%, 41%);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 0 1rem 0 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.project_card div {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.card_button > .button_card {
+  margin-top: 1.5rem;
+  padding: 0.4rem 2rem;
+  background-color: hsl(283, 29%, 41%);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card_button button:hover {
+  background-color: lch(31.51% 42.21 317.78);
+}
+.cards_title{
+    font-size: 1.6rem;
+    padding:1rem ;
+    border: 1px solid;
+    border-left: none;
+    border-right: none;
+    font-weight: 600;
+}
+/* Responsiveness: Stack cards vertically on small screens */
+@media (max-width: 768px) {
+  .project_container {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
+  }
+
+  .project_card {
+    width: 80%; /* Make cards take up more space on small screens */
+    margin: 1rem 0; /* Add vertical margin between cards */
+  }
+}
+

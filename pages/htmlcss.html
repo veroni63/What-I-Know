@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/flex.css">
+    <title>My work</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/javascript/flexgame.js"  defer></script>
+</head>
+<body>
+  <header>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li> <a href="">What I Know</a> </li>
+            </ul>
+            <div class="header__title">
+                Developed by <a href="https://veronikkaa.netlify.app/" target="_blank">veronikka</a>
+            </div>
+        </nav>
+    </header>
+    <main> 
+      <section class="summary-section">
+  <h2>Front-end 🎯</h2>
+  <p>
+   Though I’m at the beginning of my journey, I’ve applied frontend concepts by creating functional and interactive UI sections.
+   <p></p>
+    <br> <strong>Flexbox Playground,</strong> <strong>FlexiGallery,</strong> <strong>Stacked Card,</strong> <strong>Mini Calculator,</strong> <strong>Image Gallery</strong>
+     You can view all the above listed funcational section in this page
+  </p>
+  <h2>My Real Time Projects</h2>
+  <p><strong>Using HTML, CSS, JS :</strong> Digital learning platform, E-commerce website <a href="https://github.com/veroni63">view</a> </p>
+  <p><strong>Using React.Js : </strong> Admin pannel, Github Profile Finder <a href="https://github.com/veroni63">view</a> </p>
+  <p><strong>Worked on real-time projects during my 4-month internship, including a Landing Page and a Tender Management Dashboard.</strong>  </p>
+</section>
+
+        <div class="flexboxx">Display: flex 👾
+            <div> Flexbox Playground – Learn and experiment with Flexbox properties interactively!</div>
+        </div>
+        <section class="flex-game-bro">
+        <div class="whole-container-flex">
+  <section class="flexGame">
+    <div class="flexGame__box" id="flexBox">
+      <img src="/assets/game_cartoon.png" alt="cartoon">
+      <img src="/assets/game_cartoon.png" alt="cartoon">
+      <img src="/assets/game_cartoon_colored.png" class="bule_cartoon" alt="cartoon">
+      <img src="/assets/game_cartoon_colored.png" alt="cartoon">
+    </div>
+  </section>
+
+  <section class="flexGame_btn">
+    <div>Justify-content</div>
+    <button onclick="flexStart()">flex-start</button>
+    <button onclick="flexEnd()">flex-end</button>
+    <button onclick="flexCenter()">center</button><br>
+    <button onclick="flexAround()">space-around</button>
+    <button onclick="flexBetween()">space-between</button>
+    <button onclick="flexNone()">none</button>
+
+    <div>Align-items</div>
+    <button onclick="flexItemStart()">flex-start</button>
+    <button onclick="flexItemEnd()">flex-end</button>
+    <button onclick="flexItemCenter()">center</button>
+    <button onclick="flexItemsNone()">none</button>
+
+    <div>Flex-direction</div>
+    <button onclick="flexDirectionRow()">row</button>
+    <button onclick="flexDirectionCol()">column</button>
+    <button onclick="flexDirectionRowRev()">row-reverse</button>
+    <button onclick="flexDirectionColRev()">column-reverse</button>
+    <button onclick="flexDirectionNone()">none</button>
+
+    <div>Align-self</div>
+    <button onclick="flexItemsSelfStart()">flex-start</button>
+    <button onclick="flexItemsSelfEnd()">flex-end</button>
+    <button onclick="flexItemsSelfCenter()">center</button>
+    <button onclick="flexItemsSelfNone()">none</button>
+  </section>
+        </div>
+        </section>
+      <section>
+        <div class="whole-container">
+         <div class="res-title">FlexiGallery
+          <div>A responsive flexbox-based layout that displays a title and  a scrollable content section, adapting seamlessly across devices using media queries</div>
+         </div>
+          <div class="res-container">
+            <div class="row">
+              <div class="column">
+                <img src="/assets/flexigallery/wedding.jpg">
+                <img src="/assets/flexigallery/rocks.jpg">
+                <img src="/assets/flexigallery/falls2.jpg">
+                <img src="/assets/flexigallery/paris.jpg">
+                <img src="/assets/flexigallery/nature.jpg">
+                <img src="/assets/flexigallery/mist.jpg">
+                <img src="/assets/flexigallery/paris.jpg">
+              </div>
+              <div class="column">
+                <img src="/assets/flexigallery/underwater.jpg">
+                <img src="/assets/flexigallery/ocean.jpg">
+                <img src="/assets/flexigallery/wedding.jpg">
+                <img src="/assets/flexigallery/mountainskies.jpg">
+                <img src="/assets/flexigallery/rocks.jpg">
+                <img src="/assets/flexigallery/underwater.jpg">
+              </div>
+              <div class="column">
+                <img src="/assets/flexigallery/wedding.jpg">
+                <img src="/assets/flexigallery/rocks.jpg">
+                <img src="/assets/flexigallery/falls2.jpg">
+                <img src="/assets/flexigallery/paris.jpg">
+                <img src="/assets/flexigallery/nature.jpg">
+                <img src="/assets/flexigallery/mist.jpg">
+                <img src="/assets/flexigallery/paris.jpg">
+              </div>
+              <div class="column">
+                <img src="/assets/flexigallery/underwater.jpg">
+                <img src="/assets/flexigallery/ocean.jpg">
+                <img src="/assets/flexigallery/wedding.jpg">
+                <img src="/assets/flexigallery/mountainskies.jpg">
+                <img src="/assets/flexigallery/rocks.jpg">
+                <img src="/assets/flexigallery/underwater.jpg">
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+         </section>    
+      
+                 <section class="card_sec_container">
+            <div class="Stacked_card_t">Stacked Card 🗃️
+            <div> Used Position relative and absolute</div>
+        </div>
+                <div class="cards_sec">
+                  <div class="card_part_left1">I'm passionate about solving real-world problems and constantly learning — in tech and beyond.</div>
+                  <div class="card_part_right">I love transforming creative ideas into code.🔮 </div>
+                  <div class="card_part_left2">I'm not just curious in tech. I learn languages, read books, and explore ideas — because curiosity has no limits</div>
+                </div>
+         </section>    
+        <section>
+            <h1 class="grid_game_h">Learn CSS Grid 🧠</h1>
+             <div class="sub_grid_h"> Grid Playground – Learn and experiment with Grid properties interactively!</div>
+<div class="grid_container">
+  <div class="grid_game" id="grid">
+    <div class="box">Hire</div>
+    <div class="box">me</div>
+    <div class="box">🫴🏼</div>
+    <div class="box">I Will</div>
+    <div class="box">Give</div>
+    <div class="box">My Best</div>
+    <div class="box">for sure</div>
+    <div class="box">😁</div>
+  </div>
+
+  <div class="controls">
+    <button onclick="changeGrid()">Toggle Layout</button>
+    <button onclick="setGap()">Gap = 20px</button>
+    <button onclick="resetGrid()">Reset</button>
+    <select style="color: aliceblue;" onchange="changeJustifyItems(this.value)">
+      <option value="">Justify Items</option>
+      <option value="start">start</option>
+      <option value="center">center</option>
+      <option value="end">end</option>
+      <option value="stretch">stretch</option>
+    </select>
+    <select onchange="changeAlignItems(this.value)">
+      <option value="">Align Items</option>
+      <option value="start">start</option>
+      <option value="center">center</option>
+      <option value="end">end</option>
+      <option value="stretch">stretch</option>
+    </select>
+  </div>
+  </div>
+        </section>
+        <section>
+          <div class="imgBoxx">Image Gallery 🔍
+          </div>
+          <input type="text" id="inputt" placeholder="Search Unsplash...">      
+          <button class="search" onclick="funSearch()">Search</button>
+          <div class="container_grid">
+           <span class="placeholder_ty">Type to see beautiful images 📸!</span> 
+            <div id="unsplashImages"></div>
+          </div>
+        </section>
+        <div class="imgBoxx">Calculator 🧮
+          </div>
+        <section class="calculator_container">
+          
+           <div class="calculator">
+            
+    <input type="text" id="display" disabled>
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="appendValue('/')">/</button>
+      <button onclick="appendValue('*')">*</button>
+      <button onclick="appendValue('-')">-</button>
+      <button onclick="appendValue('7')">7</button>
+      <button onclick="appendValue('8')">8</button>
+      <button onclick="appendValue('9')">9</button>
+      <button onclick="appendValue('+')">+</button>
+      <button onclick="appendValue('4')">4</button>
+      <button onclick="appendValue('5')">5</button>
+      <button onclick="appendValue('6')">6</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="appendValue('1')">1</button>
+      <button onclick="appendValue('2')">2</button>
+      <button onclick="appendValue('3')">3</button>
+      <button onclick="appendValue('0')">0</button>
+      <button onclick="appendValue('.')">.</button>
+    </div>
+  </div>
+        </section>
+        
+        <section class="cartoon">
+          <div class="buttonload">
+            <i class="eye fa  fa-spin">⚆</i>
+            <i class="eye fa  fa-spin">⚆</i>
+            <span class="mouth">◡</span>
+          </div>
+        </section>
+    </main>
+</body>
+</html>
