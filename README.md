@@ -5,6 +5,22 @@ A personal project built to showcase my skills in HTML, CSS, and JavaScript — 
 
 This project grows as I learn! 💡
 
+### Home Page
+
+![Home Page](assets/HomePage1.png)
+
+## Demo view
+
+### FlexGame
+
+![FlexGame](assets/FlexGame.png)
+
+### FlexiGallery
+
+![FlexieGallery](assets/FlexieGallery.png)
+
+### To see more 👇🏼
+
 ### 🚀 Getting Started
 
 Clone the repository:
