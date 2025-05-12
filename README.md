@@ -15,10 +15,6 @@ This project grows as I learn! 💡
 
 ![FlexGame](assets/FlexGame.png)
 
-### FlexiGallery
-
-![FlexieGallery](assets/FlexieGallery.png)
-
 ### To see more 👇🏼
 
 ### 🚀 Getting Started
